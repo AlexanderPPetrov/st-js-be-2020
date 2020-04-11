@@ -22,11 +22,14 @@ npm install
 npm run server
 ```
 
+## Creating a Database in mongoDB
+
 ![Creating a cluster](https://raw.githubusercontent.com/AlexanderPPetrov/st-js-be-2020/master/docs/creating_cluster.jpg
 )
 ![Creating a cluster](https://raw.githubusercontent.com/AlexanderPPetrov/st-js-be-2020/master/docs/connect.jpg)
 
-Add your IP to whitelist and create MongoDB User with username and password then Choose a connection method
+## Setting up connection method
+Press [CONNECT] and add your IP to whitelist and create MongoDB User with username and password then Choose a connection method
 
 ![Creating a connection](https://raw.githubusercontent.com/AlexanderPPetrov/st-js-be-2020/master/docs/atlas.jpg
 )
