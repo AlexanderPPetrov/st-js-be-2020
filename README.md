@@ -47,5 +47,7 @@ You need to add .env file manually to your project as it's not shared in github.
 Add .env file to the root of the project and add in it:
 
 MONGODB_URL="YOU_NEED_TO_PASTE_HERE_THE_URL_FROM_YOUR_DB";
+
 Make sure that you replace \/test at the end with te name of your Database
+
 and replace the field \<password\> with your actual password
