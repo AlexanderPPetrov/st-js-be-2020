@@ -24,6 +24,8 @@ npm run server
 
 ![Creating a cluster](https://raw.githubusercontent.com/AlexanderPPetrov/st-js-be-2020/master/docs/creating_cluster.jpg
 )
+![Creating a cluster](https://raw.githubusercontent.com/AlexanderPPetrov/st-js-be-2020/master/docs/connect.jpg)
+
 ![Creating a connection](https://raw.githubusercontent.com/AlexanderPPetrov/st-js-be-2020/master/docs/atlas.jpg
 )
 
