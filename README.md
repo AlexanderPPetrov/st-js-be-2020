@@ -78,7 +78,7 @@ mutation{addUser(
   password: "123"
 ){
   _id
-	email
+  email
 }}
 ```
 
