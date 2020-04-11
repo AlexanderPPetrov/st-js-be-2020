@@ -26,8 +26,16 @@ npm run server
 )
 ![Creating a cluster](https://raw.githubusercontent.com/AlexanderPPetrov/st-js-be-2020/master/docs/connect.jpg)
 
+Add your IP to whitelist and create MongoDB User with username and password then Choose a connection method
+
 ![Creating a connection](https://raw.githubusercontent.com/AlexanderPPetrov/st-js-be-2020/master/docs/atlas.jpg
 )
+
+It will take a while for your cluster to be active. Reload the page if you are impatient and check.
+You will be ready when the buttons in gray [METRICS] [COLLECTIONS] become active
+Then from [COLLECTIONS] you will be able to create Database with name and a name for the collection you need.
+If you need more than one collection for your project create them.
+
 
 You need to add .env file manually to your project as it's not shared in github.
 
