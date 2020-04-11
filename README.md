@@ -22,9 +22,12 @@ npm install
 npm run server
 ```
 
-
-![Image description](https://raw.githubusercontent.com/AlexanderPPetrov/st-js-be-2020/master/docs/atlas.jpg
+![Creating a cluster](https://raw.githubusercontent.com/AlexanderPPetrov/st-js-be-2020/master/docs/creating_cluster.jpg
 )
+![Creating a connection](https://raw.githubusercontent.com/AlexanderPPetrov/st-js-be-2020/master/docs/atlas.jpg
+)
+
+You need to add .env file manually to your project as it's not shared in github.
 
 Add .env file to the root of the project and add in it:
 
