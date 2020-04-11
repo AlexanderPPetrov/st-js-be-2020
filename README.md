@@ -38,6 +38,10 @@ Press [CONNECT] and add your IP to whitelist and create MongoDB User with userna
 
 It will take a while for your cluster to be active. Reload the page if you are impatient and check.
 You will be ready when the buttons in gray [METRICS] [COLLECTIONS] become active
+
+![Creating a database](https://raw.githubusercontent.com/AlexanderPPetrov/st-js-be-2020/master/docs/create_db.jpg
+)
+
 Then from [COLLECTIONS] you will be able to create Database with name and a name for the collection you need.
 If you need more than one collection for your project create them.
 
@@ -52,6 +56,7 @@ Make sure that you replace \/test at the end with the name of your Database
 
 and replace the field \<password\> with your actual password
 
-Make sure that you remove ; at the end as it will cause an error:
+If you get the following error: Error while saving data in MongoDB atlas with mongoose
 
-Error while saving data in MongoDB atlas with mongoose
+Make sure that you remove ";" at the end as it will cause an error:
+
