@@ -59,5 +59,5 @@ and replace the field \<password\> with your actual password
 
 If you get the following error: Error while saving data in MongoDB atlas with mongoose
 
-Make sure that you remove ";" at the end as it will cause an error:
+Make sure that you remove ";" at the end as it will cause the error.
 
