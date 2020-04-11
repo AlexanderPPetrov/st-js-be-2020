@@ -51,3 +51,7 @@ MONGODB_URL="YOU_NEED_TO_PASTE_HERE_THE_URL_FROM_YOUR_DB";
 Make sure that you replace \/test at the end with the name of your Database
 
 and replace the field \<password\> with your actual password
+
+Make sure that you remove ; at the end as it will cause an error:
+
+Error while saving data in MongoDB atlas with mongoose
