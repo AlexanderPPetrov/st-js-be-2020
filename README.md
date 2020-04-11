@@ -61,3 +61,34 @@ If you get the following error: Error while saving data in MongoDB atlas with mo
 
 Make sure that you remove ";" at the end as it will cause the error.
 
+## Test your local server
+
+```
+npm run server
+```
+
+Open http://localhost:3000/graphql to test your queries and mutations
+
+Example for mutation:
+
+```
+mutation{addUser(
+  username:"MyFirstUser", 
+  email:"test@abv.bg",
+  password: "123"
+){
+  _id
+	email
+}}
+```
+
+Example for query:
+
+```
+query{users{
+  _id
+  username
+  email
+}}
+```
+
