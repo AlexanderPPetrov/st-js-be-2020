@@ -34,12 +34,12 @@ export default {
                 })
             })
         },
-        editUser: (root, {_id, username, email, password}) => {
-            return new Promise((resolve, reject) => {
-                User.findByIdAndUpdate({_id}, {$set: {username, email, password}}, {new: true}).exec((error, response) => {
-                    error ? reject(error) : resolve(response);
-                })
-            })
+        editUser: async (root, {_id, username, email, password}) => {
+            const response = await User.findByIdAndUpdate({_id}, {$set: {username, email, password}}, {new: true}).exec();
+            if(!response){
+                throw new Error(`Cannot save user: ${_id}`);
+            }
+            return response;
         }
     }
 }
