@@ -34,8 +34,8 @@ export default {
                 })
             })
         },
-        editUser: async (root, {_id, username, email, password}) => {
-            const response = await User.findByIdAndUpdate({_id}, {$set: {username, email, password}}, {new: true}).exec();
+        editUser: async (root, {_id, username, email, password, games}) => {
+            const response = await User.findByIdAndUpdate({_id}, {$set: {username, email, password, games}}, {new: true}).exec();
             if(!response){
                 throw new Error(`Cannot save user: ${_id}`);
             }
