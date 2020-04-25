@@ -5,6 +5,8 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import schema from "./graphql/GraphQLSchema";
 import dotenv from "dotenv";
+import ValidationError from './graphql/ValidationError';
+
 dotenv.config();
 
 import jwt from "express-jwt";
@@ -43,12 +45,17 @@ app.use(
                 user: req.user
             },
             graphiql: true,
-            formatError: error => ({
-                message: error.mesage,
-                validationErrors: error.originalError && error.originalError.validationErrors,
-                locations: error.locations,
-                path: error.path
-            })
+            formatError: error => {
+                if (error.originalError instanceof ValidationError) {
+                    return {
+                        message: error.mesage,
+                        validationErrors: error.originalError && error.originalError.validationErrors,
+                        // locations: error.locations,
+                        // path: error.path
+                    }
+                }
+                return error
+            }
         }
     })
 )
