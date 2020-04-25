@@ -92,3 +92,10 @@ query{users{
 }}
 ```
 
+## Deploy the project on heroku
+
+Create a new app on heroku and add the following config vars
+
+![Config variables](https://raw.githubusercontent.com/AlexanderPPetrov/st-js-be-2020/master/docs/config_vars_heroku.jpg
+)
+
