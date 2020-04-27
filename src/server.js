@@ -18,7 +18,7 @@ const auth = jwt({
 
 const app = express();
 
-const PORT = process.env.PORT || "3000";
+const PORT = process.env.PORT || "8000";
 const db = process.env.MONGODB_URL;
 
 const options = {
@@ -36,6 +36,11 @@ mongoose.connect(db, options).then(()=>{
 app.use(
     "/graphql",
     cors(),
+    // Incase you need to allow cors
+    // cors({
+    //     credentials: true,
+    //     origin: 'http://localhost:3001'
+    // }),
     bodyParser.json(),
     auth,
     expressGraphQL( req => {

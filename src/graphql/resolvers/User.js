@@ -88,7 +88,13 @@ export default {
             try {
                 savedUser = await newUser.save();        
             } catch (e) {
-                 console.log('something went wrong');  
+                 if(e.code === 11000){
+                    throw new ValidationError([{
+                        key: 'email',
+                        message: 'email_in_use',
+                    }]);
+                 }
+                 throw new Error(`Cannot create user ${email}`)
             }
             return jsonwebtoken.sign({
                     _id: newUser._id,
